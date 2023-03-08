@@ -1,0 +1,284 @@
+@import url("https://unpkg.com/css.gg@2.0.0/icons/css/heart.css");
+@import url("https://unpkg.com/css.gg@2.0.0/icons/css/trash.css");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+html, body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  line-height: 16px;
+}
+
+.contain {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #f5deb3;
+}
+
+.main {
+  flex: 1 1 auto;
+  background-color: #f5deb3;
+}
+
+.footer {
+  background-color: #e7cd9d;
+}
+.footer__block {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.title-block {
+  padding: 20px 0;
+}
+.title-block h1 {
+  text-align: center;
+  font-size: 32px;
+  border-bottom: 1px solid #8b4513;
+  padding: 0 0 20px 0;
+}
+
+.block {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.comments {
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  margin: 22px 0 0 0;
+}
+
+.comment-box {
+  margin: 20px 0 0 0;
+  background-color: rgba(140, 69, 18, 0.3019607843);
+  border-radius: 10px;
+  width: 100%;
+}
+.comment-box:last-child {
+  margin-bottom: 20px;
+}
+.comment-box__name {
+  padding: 5px 0;
+  border-bottom: 1px solid #000000;
+  margin: 10px;
+}
+.comment-box__comment {
+  margin: 10px;
+  overflow-wrap: anywhere;
+}
+.comment-box__date {
+  font-style: italic;
+  margin: 10px;
+  text-align: end;
+}
+
+.forms-box {
+  margin: 20px 0 0 0;
+  position: relative;
+  flex-basis: 30%;
+}
+
+.forms {
+  position: fixed;
+  top: 50;
+  left: 50;
+}
+
+.name-block p {
+  padding: 0 0 5px 0;
+}
+.name-block__input {
+  padding: 10px;
+  width: 200px;
+  border-radius: 10px;
+  position: relative;
+}
+.name-block__input:focus {
+  box-shadow: inset 1px 1px 5px #8b4513;
+}
+.name-block__error {
+  display: none;
+}
+.name-block__error.active {
+  display: block;
+  position: absolute;
+  top: -8px;
+  right: 0px;
+  background-color: #ff0000;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 5px 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.text-block {
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.text-block p {
+  padding: 0 0 5px 0;
+}
+.text-block__input {
+  overflow: auto;
+  resize: none;
+  padding: 10px;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+}
+.text-block__input:focus {
+  box-shadow: inset 1px 1px 5px #8b4513;
+}
+.text-block__error {
+  display: none;
+}
+.text-block__error.active {
+  display: block;
+  position: absolute;
+  top: -8px;
+  right: -32px;
+  background-color: #ff0000;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 5px 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.date-block {
+  margin: 20px 0 20px 0;
+}
+.date-block p {
+  padding: 0 0 5px 0;
+}
+.date-block__input {
+  padding: 10px;
+  width: 200px;
+  border-radius: 10px;
+}
+.date-block__input:focus {
+  box-shadow: inset 1px 1px 5px #8b4513;
+}
+
+.forms-btn {
+  background-color: rgba(140, 69, 18, 0.3019607843);
+  padding: 8px 16px;
+  border-radius: 10px;
+  width: 100%;
+  width: 200px;
+}
+.forms-btn:focus, .forms-btn:hover {
+  box-shadow: inset 1px 1px 5px #8b4513;
+}
+
+.comment-option {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  padding: 0 0 15px 15px;
+}
+
+.gg-heart {
+  cursor: pointer;
+}
+.gg-heart:hover {
+  color: #ff0000;
+}
+
+.gg-heart.active {
+  color: #ff0000;
+}
+
+.gg-trash {
+  cursor: pointer;
+}
+.gg-trash:hover {
+  color: #616060;
+}/*# sourceMappingURL=style.css.map */
