@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="none">
+    <title>Блок комментариев</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <aside class="title-block contain">
+                <h1>- Блок комментариев -</h1>
+            </aside>
+        </header>
+        <main class="main">
+            <div class="contain">
+                <div class="block">
+                    <div class="comments">
+                        <div class="comment-box">
+                            <p class="comment-box__name">Имя</p>
+                            <p class="comment-box__comment">Комментарий</p>
+                            <p class="comment-box__date">21/12/2022 23:33</p>
+                            <div class="comment-option">
+                                <i class="gg-heart"></i>
+                                <i class="gg-trash"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forms-box">
+                        <form class="forms" method="get">
+                            <div class="name-block">
+                                <label for="name-input">
+                                    <p>Имя:*</p>
+                                    <input class="name-block__input" required type="text" id="name-input"
+                                        placeholder="Ваше имя" tabindex="1">
+                                    <p class="name-block__error">Имя не может быть пустым</p>
+                                </label>
+                            </div>
+                            <div class="text-block">
+                                <label for="text-input">
+                                    <p>Комментарий:*</p>
+                                    <textarea class="text-block__input" required name="text-block" id="text-input"
+                                        placeholder="Ваш комментарий" tabindex="2"></textarea>
+                                    <p class="text-block__error">Комментарий не может быть пустым</p>
+                                </label>
+                            </div>
+                            <div class="date-block">
+                                <label for="date-input">
+                                    <p>Дата:</p>
+                                    <input class="date-block__input" type="date" id="data-input" tabindex="3">
+                                </label>
+                            </div>
+                            <button class="forms-btn" type="submit" tabindex="4 ">Добавить</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__block contain">&copy;IP 2023</div>
+        </footer>
+    </div>
+    <script src="./script/index.js"></script>
+</body>
+
+</html>
